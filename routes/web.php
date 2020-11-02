@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('user', 'publicController@index');
+
+Route::post('add-user', 'publicController@create');
