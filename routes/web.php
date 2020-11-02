@@ -19,3 +19,7 @@ Route::get('/', function () {
 Route::get('user', 'publicController@index');
 
 Route::post('add-user', 'publicController@create');
+
+Route::put('put-user', 'publicController@putCreate');
+
+Route::patch('patch-user', 'publicController@patchCreate');

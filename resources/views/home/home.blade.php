@@ -8,8 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-<form action="add-user" method="post">
+<form action="patch-user" method="post">
     @csrf
+    @method('patch')
     <input type="text" name="name">
     <input type="submit" value="submit" name="submit">
 </form>
