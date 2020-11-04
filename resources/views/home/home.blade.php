@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-<form action="patch-user" method="post">
+<form action="user" method="post">
     @csrf
     @method('patch')
     <input type="text" name="name">

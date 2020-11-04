@@ -19,5 +19,14 @@ class publicController extends Controller
     public function patchCreate (){
         return 'patch update';
     }
+    public function delete (){
+        return 'Delete ';
+    }
+    public function love (){
+        return 'I love Bangladesh ';
+    }
+    public function multiple ($id, $email){
+        return $id. ' '.$email;
+    }
 
 }

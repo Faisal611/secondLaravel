@@ -16,10 +16,20 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('user', 'publicController@index');
+Route::get('user-creact', 'publicController@index');
 
-Route::post('add-user', 'publicController@create');
+Route::post('user', 'publicController@create');
 
-Route::put('put-user', 'publicController@putCreate');
+Route::put('user', 'publicController@putCreate');
 
-Route::patch('patch-user', 'publicController@patchCreate');
+Route::patch('user', 'publicController@patchCreate');
+
+Route::delete('user', 'publicController@delete');
+//----------------------------------------------------------------
+Route::get('love', 'publicController@love');
+
+Route::redirect('test', 'love');
+//----------------------------------------------------------------
+
+Route::get('multiple/{id}/{email}', 'publicController@multiple');
+
