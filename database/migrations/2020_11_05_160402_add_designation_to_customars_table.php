@@ -16,6 +16,7 @@ class AddDesignationToCustomarsTable extends Migration
         Schema::table('customars', function (Blueprint $table) {
             $table->string('designation')->nullable()->after('description');
             $table->text('description')->nullable()->change();
+            $table->renameColumn('name', 'username');
         });
     }
 
