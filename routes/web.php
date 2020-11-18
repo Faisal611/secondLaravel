@@ -31,5 +31,5 @@ Route::get('love', 'publicController@love');
 Route::redirect('test', 'love');
 //----------------------------------------------------------------
 
-Route::get('multiple/{id}/{emai}', 'publicController@multiple');
+Route::get('multiple/{id}/{email}', 'publicController@multiple');
 
